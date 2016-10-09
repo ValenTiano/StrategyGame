@@ -1,12 +1,16 @@
 #pragma once
+#include <SFML\Graphics.hpp>
+
 class Tile
 {
 public:
-    Tile();
-    Tile(char symbol);
+    Tile(char symbol, int xCords, int yCords);
     ~Tile();
-    void Print();
+    sf::CircleShape getSprite();
 private:
     char _type;
+    int _xCords;
+    int _yCords;
+    Tile();
 };
 
