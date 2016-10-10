@@ -9,7 +9,7 @@ public:
     Menu(float width, float height);
     ~Menu();
 
-    void Draw(sf::RenderWindow &window);
+    void Draw(sf::RenderWindow &window); 
 
 private: 
     float _width;

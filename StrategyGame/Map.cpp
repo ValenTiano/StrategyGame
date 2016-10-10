@@ -34,5 +34,5 @@ void Map::PaintTile(int x, int y, TileType type) {
 }
 
 void Map::PaintNeigbers(int x, int y) {
-
+	this->_tile[x - 1][y - 1]->setType(type);
 }
